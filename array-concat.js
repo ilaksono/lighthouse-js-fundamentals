@@ -1,0 +1,17 @@
+function concat (arr1, arr2) {
+  var arr3 = [];
+
+  for(var a of arr1)
+    arr3.push(a);
+
+  for(var b of arr2)
+    arr3.push(b);
+    
+  return arr3;  
+
+}
+
+console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
+console.log(concat([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);
+console.log(concat([], [ 9, 7, 2 ]), "=?", [ 9, 7, 2 ]);
+console.log(concat([ 5, 10 ], []), "=?", [ 5, 10 ]);
